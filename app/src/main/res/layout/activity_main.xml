@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Begin root scroll view -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -31,63 +30,37 @@
             >
             <!-- Begin horizontal layout for single card -->
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/card_height"
-                android:orientation="horizontal"
-                android:background="@drawable/shape"
+                style="@style/cardStyle"
                 >
                 <!-- The card's image -->
                 <ImageView
-                    android:layout_width="@dimen/null_size"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    style="@style/cardImageStyle"
                     android:src="@drawable/ic_code_black_24dp"
-                    android:tint="@color/colorPrimary"
-                    android:scaleType="center"
-                    android:background="@drawable/image_radius"
                     />
                 <!-- The card's text -->
                 <TextView
-                    android:layout_width="@dimen/null_size"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    style="@style/cardTextStyle"
                     android:text="@string/udacity"
-                    android:textSize="@dimen/medium_text_size"
-                    android:gravity="center_vertical"
                     android:textAlignment="center"
-                    android:textColor="@color/text_color"
                     />
             </LinearLayout>
             <!-- End horizontal layout for single card -->
 
             <!-- Begin horizontal layout for single card -->
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/card_height"
-                android:orientation="horizontal"
-                android:background="@drawable/shape"
+                style="@style/cardStyle"
                 android:layout_marginTop="@dimen/medium_spacing"
                 >
                 <!-- The card's image -->
                 <ImageView
-                    android:layout_width="@dimen/null_size"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    style="@style/cardImageStyle"
                     android:src="@drawable/ic_phone_black_24dp"
-                    android:tint="@color/colorPrimary"
-                    android:scaleType="center"
-                    android:background="@drawable/image_radius"
                     />
                 <!-- The card's text -->
                 <TextView
-                    android:layout_width="@dimen/null_size"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    style="@style/cardTextStyle"
                     android:text="@string/phone_number"
-                    android:textSize="@dimen/medium_text_size"
-                    android:gravity="center_vertical"
                     android:textAlignment="center"
-                    android:textColor="@color/text_color"
                     android:clickable="true"
                     android:autoLink="all"
                     />
@@ -96,30 +69,18 @@
 
             <!-- Begin horizontal layout for single card -->
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/card_height"
-                android:orientation="horizontal"
-                android:background="@drawable/shape"
+                style="@style/cardStyle"
                 android:layout_marginTop="@dimen/medium_spacing"
                 >
                 <!-- The card's image -->
                 <ImageView
-                    android:layout_width="@dimen/null_size"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    style="@style/cardImageStyle"
                     android:src="@drawable/ic_home_black_24dp"
-                    android:tint="@color/colorPrimary"
-                    android:scaleType="center"
-                    android:background="@drawable/image_radius"
                     />
                 <!-- The card's text -->
                 <TextView
-                    android:layout_width="@dimen/null_size"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    style="@style/cardTextStyle"
                     android:text="@string/udacity_web"
-                    android:textSize="@dimen/medium_text_size"
-                    android:gravity="center_vertical"
                     android:textAlignment="center"
                     android:autoLink="web"
                     />
@@ -128,32 +89,19 @@
 
             <!-- Begin horizontal layout for single card -->
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/card_height"
-                android:orientation="horizontal"
-                android:background="@drawable/shape"
+                style="@style/cardStyle"
                 android:layout_marginTop="@dimen/medium_spacing"
                 >
                 <!-- The card's image -->
                 <ImageView
-                    android:layout_width="@dimen/null_size"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    style="@style/cardImageStyle"
                     android:src="@drawable/ic_location_on_black_24dp"
-                    android:tint="@color/colorPrimary"
-                    android:scaleType="center"
-                    android:background="@drawable/image_radius"
                     />
                 <!-- The card's text -->
                 <TextView
-                    android:layout_width="@dimen/null_size"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    style="@style/cardTextStyle"
                     android:text="@string/location"
-                    android:textSize="@dimen/medium_text_size"
-                    android:gravity="center_vertical"
                     android:textAlignment="center"
-                    android:textColor="@color/text_color"
                     android:clickable="true"
                     android:autoLink="map"
                     />
@@ -180,31 +128,23 @@
                 android:textAlignment="center" />
             <!-- Social media image (can turn it into link with java intents) -->
             <ImageView
-                android:layout_width="@dimen/icon_size"
-                android:layout_height="@dimen/icon_size"
+                style="@style/iconStyle"
                 android:src="@drawable/fb"
-                android:layout_marginLeft="@dimen/small_spacing"
                 />
             <!-- Social media image (can turn it into link with java intents) -->
             <ImageView
-                android:layout_width="@dimen/icon_size"
-                android:layout_height="@dimen/icon_size"
+                style="@style/iconStyle"
                 android:src="@drawable/twitter"
-                android:layout_marginLeft="@dimen/small_spacing"
                 />
             <!-- Social media image (can turn it into link with java intents) -->
             <ImageView
-                android:layout_width="@dimen/icon_size"
-                android:layout_height="@dimen/icon_size"
+                style="@style/iconStyle"
                 android:src="@drawable/instagram"
-                android:layout_marginLeft="@dimen/small_spacing"
                 />
             <!-- Social media image (can turn it into link with java intents) -->
             <ImageView
-                android:layout_width="@dimen/icon_size"
-                android:layout_height="@dimen/icon_size"
+                style="@style/iconStyle"
                 android:src="@drawable/linkedin"
-                android:layout_marginLeft="@dimen/small_spacing"
                 />
         </LinearLayout>
         <!-- End horizontal layout for the footer -->

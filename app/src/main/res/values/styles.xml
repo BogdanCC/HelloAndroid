@@ -11,4 +11,35 @@
     <style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">@color/colorAccent</item>
     </style>
+
+    <!-- Card Element Styles -->
+    <style name="cardStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/card_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/shape</item>
+    </style>
+    <style name="cardImageStyle">
+        <item name="android:layout_width">@dimen/null_size</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:tint">@color/colorPrimary</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">@drawable/image_radius</item>
+    </style>
+    <style name="cardTextStyle">
+        <item name="android:layout_width">@dimen/null_size</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <!-- Footer Icons Styles -->
+    <style name="iconStyle">
+        <item name="android:layout_width">@dimen/icon_size</item>
+        <item name="android:layout_height">@dimen/icon_size</item>
+        <item name="android:layout_marginLeft">@dimen/small_spacing</item>
+    </style>
 </resources>
